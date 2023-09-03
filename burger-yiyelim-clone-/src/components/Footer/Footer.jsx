@@ -20,7 +20,7 @@ const Footer = () => {
         <h4 className="footer-title">Kurumsal</h4>
         <ul className="footer-links">
           <li>
-            <a href="#">Hakkımızda</a>
+            <a href="/About">Hakkımızda</a>
           </li>
           <li>
             <a href="#">Aydınlatma Metni</a>
@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="#">Franchising Başvurusu</a>
           </li>
           <li>
-            <a href="#">İletişim</a>
+            <a href="/Contact">İletişim</a>
           </li>
           <li>
             <a href="#">İnsan Kaynakları</a>
@@ -43,7 +43,7 @@ const Footer = () => {
         <h4 className="footer-title">Ürünler</h4>
         <ul className="footer-links">
           <li>
-            <a href="#">Menü</a>
+            <a href="/Menu">Menü</a>
           </li>
         </ul>
       </div>
