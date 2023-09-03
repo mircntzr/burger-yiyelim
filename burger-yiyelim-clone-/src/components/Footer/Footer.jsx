@@ -1,79 +1,74 @@
 import React from "react";
-import "./Footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="social-media">
-        <FacebookIcon />
-        <InstagramIcon />
-        <TwitterIcon />
+    <footer className="footer-container">
+      <div className="footer-section">
+        <h4 className="footer-title">Burger Yiyelim</h4>
+        <p className="footer-description">
+          Burger Yiyelim markasının tek hak sahibi Keban Et’tir. Web sitemizde
+          bulunan fiyatlar şubelere, paket servis ve gel-al servise göre
+          farklılık gösterebilmektedir. Burger Yiyelim tüm promosyonlar ve
+          kampanyaları değiştirme ve sonlandırma hakkını saklı tutar.
+        </p>
       </div>
-      <div className="footer-item">
-        <h4>İLETİŞİM</h4>
-        <p>
-          <i className="map-marker"></i>
+      <div className="footer-section">
+        <h4 className="footer-title">Kurumsal</h4>
+        <ul className="footer-links">
+          <li>
+            <a href="#">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="#">Aydınlatma Metni</a>
+          </li>
+          <li>
+            <a href="#">Franchising Başvurusu</a>
+          </li>
+          <li>
+            <a href="#">İletişim</a>
+          </li>
+          <li>
+            <a href="#">İnsan Kaynakları</a>
+          </li>
+          <li>
+            <a href="#">Et Aşkı</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h4 className="footer-title">Ürünler</h4>
+        <ul className="footer-links">
+          <li>
+            <a href="#">Menü</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h4 className="footer-title">İletişim</h4>
+        <p className="footer-description">
           Yenibosna Merkez Mah, Kavak Sk. No:4/B, 34197 Bahçelievler/İstanbul
-          <br /> Bahçelievler / İstanbul
+          <br />
+          Bahçelievler / İstanbul
+          <br />
+          destek@kebanet.com
         </p>
-        <p>
-          <i className="envelope"></i>{" "}
-          <a href="mailto:destek@kebanet.com">destek@kebanet.com</a>
-        </p>
-        <ul className="social-media">
-          <li>
-            <a href="https://www.facebook.com/burgeryiyelim">
-              <i className="facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/burgeryiyelimm/?hl=tr">
-              <i className="instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UC8Hzo9_dwp62eHsahGk0G-A">
-              <i className="youtube"></i>
-            </a>
-          </li>
-        </ul>
+        <div className="social-icons">
+          <a href="#">
+            <FacebookIcon className="icon" />
+          </a>
+          <a href="#">
+            <InstagramIcon className="icon" />
+          </a>
+          <a href="#">
+            <YouTubeIcon className="icon" />
+          </a>
+        </div>
       </div>
-      <p>Tüm Hakları Saklıdır | Burger Yiyelim</p>
-      <div>
-        <h4>KURUMSAL</h4>
-        <ul className="links">
-          <li>
-            <a href="https://www.burgeryiyelim.com/about-us">Hakkımızda</a>
-          </li>
-          <li>
-            <a href="https://www.burgeryiyelim.com/aydinlatma-metni">
-              Aydınlatma Metni
-            </a>
-          </li>
-          <li>
-            <a href="https://www.burgeryiyelim.com/franchising">
-              Franchising Başvurusu
-            </a>
-          </li>
-          <li>
-            <a href="https://www.burgeryiyelim.com/contact-us">İletişim</a>
-          </li>
-          <li>
-            <a href="https://www.burgeryiyelim.com/insan-kaynaklari">
-              İnsan Kaynakları
-            </a>
-          </li>
-          <li>
-            <a href="https://www.burgeryiyelim.com/et-aski" title="Et Aşkı">
-              Et Aşkı
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </footer>
   );
 };
 

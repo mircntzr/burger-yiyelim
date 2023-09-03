@@ -1,54 +1,71 @@
-.footer {
-  background-color: brown;
-  padding: 40px 0;
-  flex-direction: center;
+.footer-container {
   display: flex;
-  color: #ffff;
-  text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #2b2b2b;
+  color: #fff;
 }
 
-.footer .social-media {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+.footer-section {
+  width: 25%;
 }
 
-.footer .social-media .icon {
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ffcc00;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
   margin-right: 10px;
 }
 
-.footer .footer-item {
-  margin-bottom: 30px;
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
-.footer .footer-item h4 {
-  font-size: 18px;
-  font-weight: bold;
+.icon {
+  font-size: 24px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.footer .footer-item p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.footer .links li {
-  list-style: none;
-  margin-bottom: 10px;
-}
-
-.footer .links li a {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 20px 0;
-  }
-
-  .footer .social-media {
-    flex-wrap: wrap;
-  }
 }
